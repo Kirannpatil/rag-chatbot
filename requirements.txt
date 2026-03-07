@@ -1,0 +1,6 @@
+llama-index
+llama-index-embeddings-huggingface
+llama-index-llms-groq
+sentence-transformers
+flask
+llama-parse

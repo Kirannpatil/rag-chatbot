@@ -1,0 +1,11 @@
+Cancellation Policy
+Flights
+Offer Zone
+The customer can choose to cancel an order any time before it's dispatched. The order cannot be canceled once it’s out for delivery. However,
+the customer may choose to reject it at the doorstep.
+The time window for cancellation varies based on different categories and the order cannot be canceled once the specified time has passed.
+In some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged. The
+details about the time window mentioned on the product page or order confirmation page will be considered final.
+In case of any cancellation from the seller due to unforeseen circumstances, a full refund will be initiated for prepaid orders.
+Flipkart reserves the right to accept the cancellation of any order. Flipkart also reserves the right to waive off or modify the time window or
+cancellation fee from time to time.

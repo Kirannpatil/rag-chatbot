@@ -35,6 +35,7 @@ Settings.embed_model = HuggingFaceEmbedding(
 Settings.llm = Groq(
     model=GROQ_MODEL,
     api_key=GROQ_API_KEY,
+    temperature=0.1, # best for Q&A
 )
 
 # ── Load index ────────────────────────────────────────────────
@@ -51,17 +52,24 @@ chat_engine = index.as_chat_engine(
     memory=memory,
     similarity_top_k=3,
     system_prompt="""
-        You are a helpful customer support assistant.
-    Answer using ONLY the return_policy document provided.
-    If multiple chunks say the same thing, summarize ONCE.
-    For simple questions give 1-2 sentence answer.
-    For complex questions give detailed answer.
-    Do not repeat yourself under any circumstance.
-    If answer not in documents say:
-    "Please contact our support team."
+        You are a Flipkart customer support assistant.
+    You have access to three policy documents:
+    1. Cancellation Policy
+    2. Returns Policy
+    3. Refund Policy
+
+    STRICT RULES:
+    1. Answer ONLY from the documents provided
+    2. Never make up numbers, dates or timelines
+    3. For simple questions give 1-2 sentence answer
+    4. For complex questions give detailed answer
+    5. Do not repeat yourself under any circumstance
+    6. If multiple chunks say same thing summarize ONCE
+    7. If answer not in documents say:
+    "I don't have that information.
+     Please contact Flipkart support."
     """,
 )
-
 # ── Flask app ─────────────────────────────────────────────────
 app = Flask(__name__)
 

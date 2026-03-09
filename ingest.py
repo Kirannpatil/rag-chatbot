@@ -31,38 +31,24 @@ Settings.embed_model = HuggingFaceEmbedding(
 Settings.llm = None
 
 # ── LlamaParse API Key ──
-LLAMA_PARSE_API_KEY = os.getenv("LLAMA_PARSE_API_KEY")
+#LLAMA_PARSE_API_KEY = os.getenv("LLAMA_PARSE_API_KEY")
 DATA_DIR    = os.path.join(os.path.dirname(__file__), "data")
 STORAGE_DIR = os.path.join(os.path.dirname(__file__), "storage")
 
 
 def main():
     print("=" * 50)
-    print("  RAG Ingest — LlamaParse Edition")
+    #print("  RAG Ingest — LlamaParse Edition")
     print("=" * 50)
 
     if not os.listdir(DATA_DIR):
         print(f"\n❌  No files found in {DATA_DIR}")
-        print("    Put your return_policy.pdf there and re-run.\n")
+        print("    Put your return_policy.txt there and re-run.\n")
         return
 
-    # ── LlamaParse — table aware PDF parser ──
-    print("\n📄  Parsing PDF with LlamaParse...")
-    parser = LlamaParse(
-        api_key=LLAMA_PARSE_API_KEY,
-        result_type="markdown",       # converts table to clean markdown
-        verbose=True,
-        language="en",
-    )
-
-    # Use LlamaParse for PDFs, fallback to default for other files
-    file_extractor = {".pdf": parser}
-
-    documents = SimpleDirectoryReader(
-        DATA_DIR,
-        file_extractor=file_extractor
-    ).load_data()
-
+    # ──Because we are taking .txt file and not pdf  ──
+    print("\n📄  SimpleDirectoryReader reads .txt files natively and preserves the content exactly as-is")
+    documents = SimpleDirectoryReader(DATA_DIR).load_data()
     print(f"✅  Loaded {len(documents)} document chunk(s)")
 
     # Preview first chunk so you can verify extraction quality

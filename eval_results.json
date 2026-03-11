@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "relevancy_pass_rate": "67%",
+    "correctness_avg_score": "4.0/5"
+  },
+  "details": [
+    {
+      "question": "after receiving shirt within what period i can return it",
+      "ground_truth": "Lifestyle products including shirts have a 10 day return window. Refund, Replacement or Exchange is allowed.",
+      "answer": "The shirt falls under the \"Lifestyle\" category. For Lifestyle products, the return window is 10 days, and the allowed actions are Refund, Replacement, or Exchange.",
+      "relevancy": false,
+      "correctness": 4.0
+    },
+    {
+      "question": "within how many days can i return a shirt",
+      "ground_truth": "Lifestyle products including shirts have a 10 day return window. Refund, Replacement or Exchange is allowed.",
+      "answer": "For a shirt, which falls under the Lifestyle category, you can return it within 10 days. The allowed actions are Refund, Replacement, or Exchange.",
+      "relevancy": false,
+      "correctness": 4.0
+    },
+    {
+      "question": "how many days do i have to return a mobile phone",
+      "ground_truth": "Mobile phones fall under Electronics. 7 days service center replacement or repair only.",
+      "answer": "For mobile phones, the return window is 7 days, but this may vary depending on the specific brand of the mobile phone. If the mobile phone is from brands like Apple, Google, Motorola, Infinix, Reddi, MI, Vivo, POCO, Realme, or Samsung, the return policy may differ. In general, for these specific brands, the return window is also 7 days, with the option for service center replacement/repair only.",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "return policy for books",
+      "ground_truth": "7 Days Return. Please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product.",
+      "answer": "For the category \"Books\", the return window is 7 days, and the allowed action is \"Refund or Replacement\".",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "can i return medicine",
+      "ground_truth": "Medicine has a 2 day return window. Refund only.",
+      "answer": "For Medicine (Allopathy & Homeopathy), the return window is 2 days, and the allowed action is Refund.",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "can i cancel my order after it is out for delivery",
+      "ground_truth": "The order cannot be cancelled once it is out for delivery. However you may reject it at the doorstep.",
+      "answer": "According to the Cancellation Policy for Flights and Offer Zone, \"The order cannot be canceled once it\u2019s out for delivery. However, the customer may choose to reject it at the doorstep.\"",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "is there a cancellation fee",
+      "ground_truth": "In some cases a cancellation fee may be charged if the order is cancelled after the specified time window.",
+      "answer": "According to the Cancellation Policy, in some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged. However, the details about the time window and cancellation fee are mentioned on the product page or order confirmation page, which will be considered final.",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "what is the return policy for a jetpack",
+      "ground_truth": "I don't have that information. Please contact Flipkart support.",
+      "answer": "I don't have that information. Please contact Flipkart support.",
+      "relevancy": true,
+      "correctness": 4.0
+    },
+    {
+      "question": "who is the CEO of Flipkart",
+      "ground_truth": "I don't have that information. Please contact Flipkart support.",
+      "answer": "I don't have that information. Please contact Flipkart support.",
+      "relevancy": false,
+      "correctness": 4.0
+    }
+  ]
+}

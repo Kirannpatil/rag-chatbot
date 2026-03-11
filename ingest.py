@@ -2,7 +2,7 @@
 ingest.py
 ─────────
 Reads all documents from the data/ folder using
-LlamaParse for accurate table extraction,
+LlamaParse if pdf given for accurate table extraction,
 chunks them, converts to embeddings, and saves
 the vector index to storage/.
 
@@ -43,7 +43,7 @@ def main():
 
     if not os.listdir(DATA_DIR):
         print(f"\n❌  No files found in {DATA_DIR}")
-        print("    Put your return_policy.txt there and re-run.\n")
+        print(" Put your return_policy.txt there and re-run.\n")
         return
 
     # ──Because we are taking .txt file and not pdf  ──

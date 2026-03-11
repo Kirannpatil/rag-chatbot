@@ -56,7 +56,6 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 ```
 GROQ_API_KEY=your_groq_api_key
-LLAMA_PARSE_API_KEY=your_llama_parse_api_key
 ```
 Get Groq API key free at: https://console.groq.com
 
